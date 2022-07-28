@@ -10,6 +10,7 @@
                     <router-link to="/" class="nav-item nav-link">Home</router-link>
                     <router-link to="/add" class="nav-item nav-link">Add Post</router-link>
                     <router-link to="/register" class="nav-item nav-link">Register</router-link>
+                    <router-link to="/addcity" class="nav-item nav-link">City</router-link>
                 </div>
             </div>
         </nav>

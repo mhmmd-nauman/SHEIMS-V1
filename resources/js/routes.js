@@ -2,7 +2,7 @@ import AllPosts from './components/AllPost.vue';
 import AddPost from './components/AddPost.vue';
 import EditPost from './components/EditPost.vue';
 import Register from './components/Register.vue';
-
+import City from './components/City.vue';
 export const routes = [
     {
         name: 'home',
@@ -24,5 +24,10 @@ export const routes = [
         name: 'Register',
         path: '/register',
         component: Register
+    },
+    {
+        name: 'addCity',
+        path:'/addcity',
+        component: City
     }
 ];

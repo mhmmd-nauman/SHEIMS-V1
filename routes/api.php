@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-
+use App\Http\Controllers\CityController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -25,4 +25,11 @@ Route::group(['prefix' => 'post'], function () {
     Route::get('edit/{id}', [PostController::class, 'edit']);
     Route::post('update/{id}', [PostController::class, 'update']);
     Route::delete('delete/{id}', [PostController::class, 'delete']);
+});
+
+Route::group(['prefix' => 'city'], function () {
+    Route::post('add', [CityController::class, 'add']);
+    Route::get('edit/{id}', [CityController::class, 'edit']);
+    Route::post('update/{id}', [CityController::class, 'update']);
+    Route::delete('delete/{id}', [CityController::class, 'delete']);
 });
