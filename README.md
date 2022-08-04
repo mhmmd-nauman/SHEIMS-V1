@@ -66,11 +66,19 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 Configurations 
 
 composer update
+
 php artisan migrate
+
 omposer require laravel/ui
+
 php artisan ui vue
+
 npm install vue-router vue-axios --save
+
 copy back resources/js/app.js
+
 npm install
+
 npm run watch
+
 php artisan serve
