@@ -14,6 +14,8 @@ class CityController extends Controller
     }
     public function add(Request $request)
     {
+        City::create($request->all());
+        /*
         $city = new City([
             'country' => $request->input('country'),
             'region' => $request->input('region'),
@@ -27,8 +29,8 @@ class CityController extends Controller
             'division_id' => $request->input('division_id')
         ]);
         $city->save();
-  
-        return response()->json('city successfully added');
+        */
+        //return response()->json('city successfully added');
     }
     public function edit($id)
     {
